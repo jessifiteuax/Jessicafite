@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1016698339164",
+    "project_id": "jessicafite-64fab",
+    "storage_bucket": "jessicafite-64fab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1016698339164:android:c0bd218b835a3d3ac0cb99",
+        "android_client_info": {
+          "package_name": "com.example.jessicafite"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1016698339164-6pambecvntn3bnpn8ui99gu1vlqscuaq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jessicafite",
+            "certificate_hash": "cfc9ed4d4492424d9189bad51ab78f06e059b827"
+          }
+        },
+        {
+          "client_id": "1016698339164-n78brcsdub7oaekofcsbek2ts6lp9lnb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVS4rvKs88l3-3bvButRa3UFhKg8FvrPU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1016698339164-n78brcsdub7oaekofcsbek2ts6lp9lnb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
