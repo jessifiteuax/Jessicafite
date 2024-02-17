@@ -12,3 +12,10 @@ cartViewModel, cartview, cartcard
 
 #snackbar 
 en login
+
+
+
+Para entrar en la App podéis registrar un usuario nuevo, entrar con Gmail o usar estas credenciales:
+
+test@test.es	
+123456
