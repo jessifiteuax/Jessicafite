@@ -44,5 +44,4 @@ fun TabsView(navController: NavController, loginVM: LoginViewModel) {
             1 -> RegisterView(navController, loginVM)
         }
     }
-
 }

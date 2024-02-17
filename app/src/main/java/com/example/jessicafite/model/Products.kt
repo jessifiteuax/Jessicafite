@@ -9,7 +9,7 @@ data class Product(
     val price: Float,
     val img: Int
 )
-
+//lista de productos
 @Composable
 fun getProducts(): List<Product>{
     return listOf(

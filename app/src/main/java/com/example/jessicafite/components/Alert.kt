@@ -18,7 +18,6 @@ fun Alert(
     onConfirmClick: () -> Unit,
     onDismissClick: () -> Unit
 ) {
-    //val scroll = rememberScrollState(0)
 
     AlertDialog(onDismissRequest = { onDismissClick },
         title = { Text(text = title) },
@@ -26,7 +25,6 @@ fun Alert(
             Text(
                 text = message,
                 textAlign = TextAlign.Justify,
-                //modifier = Modifier.verticalScroll(scroll)
             )
         },
         confirmButton = {

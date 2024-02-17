@@ -11,6 +11,7 @@ import com.example.jessicafite.views.login.CartView
 import com.example.jessicafite.views.login.TabsView
 import com.example.jessicafite.views.products.HomeView
 
+//navegacion views
 @Composable
 fun NavManager(
     loginVM: LoginViewModel, productsVM: ProductsViewModel, cartVM: CartViewModel

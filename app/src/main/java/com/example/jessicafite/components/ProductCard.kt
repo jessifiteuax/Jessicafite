@@ -36,8 +36,6 @@ import com.example.jessicafite.viewModels.CartViewModel
 
 @Composable
 fun ProductCard(producto: Product, cartVM: CartViewModel) {
-    //val scope = rememberCoroutineScope()
-    //val snackbarHostState = remember { SnackbarHostState() }
     val context = LocalContext.current
     var show by remember { mutableStateOf(false) }
 
@@ -63,8 +61,6 @@ fun ProductCard(producto: Product, cartVM: CartViewModel) {
             Text(text = producto.title,
                 fontWeight = FontWeight.Bold,
                 modifier = Modifier.align(Alignment.CenterHorizontally))
-            //Spacer(modifier = Modifier.padding(5.dp))
-            //Text(text = producto.description, color = Color.Gray)
             Spacer(modifier = Modifier.padding(5.dp))
             Divider(
                 Modifier
@@ -94,9 +90,6 @@ fun ProductCard(producto: Product, cartVM: CartViewModel) {
                                 "Producto agregado al carrito",
                                 Toast.LENGTH_SHORT
                             ).show()
-                            /*scope.launch {
-                                snackbarHostState.showSnackbar("Producto agregado al carrito")
-                            }*/
                         }
                 )
             }

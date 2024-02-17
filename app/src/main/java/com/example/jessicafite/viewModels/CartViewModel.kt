@@ -18,9 +18,5 @@ class CartViewModel : ViewModel() {
         shoppingCart = shoppingCart - producto
     }
 
-    fun limpiarCarrito() {
-        shoppingCart = emptyList()
-    }
-
     var sumaCarrito: Float = 0f
 }

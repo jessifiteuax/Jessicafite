@@ -71,7 +71,7 @@ class LoginViewModel: ViewModel() {
                         }
                     }
             }catch (e: Exception){
-                Log.d("Error en la aplicacion", "ERROR: ${e.localizedMessage}")
+                Log.d("Error de la aplicacion", "ERROR: ${e.localizedMessage}")
             }
         }
     }

@@ -176,9 +176,6 @@ fun LoginView(navController: NavController, loginVM: LoginViewModel) {
                             confirmText = "Aceptar",
                             onConfirmClick = { loginVM.closeAlert() }) {
                         }
-                        /*scope.launch {
-                            snackbarHostState.showSnackbar("Usuario y/o contraseña incorrectos")
-                        }*/
                     }
 
                     Row(

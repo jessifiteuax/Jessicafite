@@ -54,13 +54,22 @@ fun CartCard(producto: Product, cartVM: CartViewModel) {
                 contentDescription = null,
                 modifier = Modifier
                     .size(120.dp)
-                    .fillMaxWidth(),
-                contentScale = ContentScale.Crop
+                    .fillMaxWidth()
+                    .align(Alignment.CenterHorizontally),
+                contentScale = ContentScale.Crop,
             )
             Spacer(modifier = Modifier.padding(5.dp))
-            Text(text = producto.title, fontWeight = FontWeight.Bold)
+            Text(
+                text = producto.title,
+                fontWeight = FontWeight.Bold,
+                modifier = Modifier.align(Alignment.CenterHorizontally)
+            )
             Spacer(modifier = Modifier.padding(5.dp))
-            Text(text = producto.description, color = Color.Gray)
+            Text(
+                text = producto.description,
+                color = Color.Gray,
+                modifier = Modifier.align(Alignment.CenterHorizontally)
+            )
             Spacer(modifier = Modifier.padding(5.dp))
             Divider(
                 Modifier
@@ -71,14 +80,12 @@ fun CartCard(producto: Product, cartVM: CartViewModel) {
             Row(
                 verticalAlignment = Alignment.CenterVertically
             ) {
-                Text(text = producto.price.toString()+" €",
+                Text(
+                    text = producto.price.toString() + " €",
                     fontWeight = FontWeight.Bold,
                     fontSize = 30.sp,
-                    modifier = Modifier.weight(0.7f))
-                /* Text(text = "Añadir al carrito",
-                     modifier = Modifier
-                         .weight(0.3f)
-                         .clickable { cartVM.agregarAlCarrito(producto) })*/
+                    modifier = Modifier.weight(0.7f)
+                )
                 Icon(imageVector = Icons.Default.Delete,
                     contentDescription = "",
                     modifier = Modifier
@@ -86,7 +93,13 @@ fun CartCard(producto: Product, cartVM: CartViewModel) {
                         .clickable {
                             cartVM.eliminarDelCarrito(producto)
                             cartVM.sumaCarrito -= producto.price
-                            Toast.makeText(context, "Producto eliminado del carrito", Toast.LENGTH_SHORT).show()
+                            Toast
+                                .makeText(
+                                    context,
+                                    "Producto eliminado del carrito",
+                                    Toast.LENGTH_SHORT
+                                )
+                                .show()
                             /*scope.launch {
                                 snackbarHostState.showSnackbar("Producto eliminado del carrito")
                             }*/

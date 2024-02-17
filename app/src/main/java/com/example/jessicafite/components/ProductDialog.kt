@@ -15,6 +15,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.Dialog
 import com.example.jessicafite.model.Product
 
@@ -39,10 +40,10 @@ fun ProductDialog(producto: Product, show: Boolean, onDismiss: () -> Unit) {
                         .fillMaxWidth(),
                     contentScale = ContentScale.Crop
                 )
+                //Spacer(modifier = Modifier.padding(5.dp))
+                //Text(text = producto.title, fontWeight = FontWeight.Bold)
                 Spacer(modifier = Modifier.padding(5.dp))
-                Text(text = producto.title, fontWeight = FontWeight.Bold)
-                Spacer(modifier = Modifier.padding(5.dp))
-                Text(text = producto.description, color = Color.Gray)
+                Text(text = producto.description, color = Color.Black, fontSize = 20.sp)
             }
         }
     }

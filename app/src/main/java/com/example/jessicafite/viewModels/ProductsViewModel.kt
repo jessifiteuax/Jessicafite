@@ -39,7 +39,7 @@ class ProductsViewModel:ViewModel() {
                 _productsData.value = documents
             }
             .addOnFailureListener { exception ->
-                Log.e("Error", "Error fetching products", exception)
+                Log.e("Error", "Error al hacer fetching products", exception)
             }
     }*/
 

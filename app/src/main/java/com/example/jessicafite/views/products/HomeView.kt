@@ -33,7 +33,6 @@ fun HomeView(
     productsVM: ProductsViewModel,
     cartVM: CartViewModel
 ) {
-
     /*LaunchedEffect(Unit) {
         productsVM.fetchProducts()
     }*/
