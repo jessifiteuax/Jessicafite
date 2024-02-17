@@ -17,7 +17,7 @@ import com.example.jessicafite.viewModels.ProductsViewModel
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+//ViewModels
         val loginVM : LoginViewModel by viewModels()
         val productsVM : ProductsViewModel by viewModels()
         val cartVM: CartViewModel by viewModels()
